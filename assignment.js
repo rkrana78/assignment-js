@@ -16,9 +16,13 @@ function hotelCost(day) {
         var remaining = day - 20;
         var thirdPart = remaining * 50;
         totalFare = firstPart + secondPart + thirdPart;
+    } if ( day >= 0) {
+        return totalFare;
+    } else {
+        return "sorry! guest information is not found";
     }
-    return totalFare;
 }
+
 var totalDays = hotelCost(15);
 console.log(totalDays);
 
@@ -33,7 +37,8 @@ function kilometerToMeter(kilo){
         return "distance can not be negetive";
     }
 }
-var path = kilometerToMeter(-9.85629);
+
+var path = kilometerToMeter(9.85629);
 console.log(path);
 
 
@@ -46,26 +51,24 @@ function budgetCalculator(watch, phone, laptop){
     var laptopCost = laptop * 500;
     totalCost = watchCost + phoneCost + laptopCost;
     return totalCost;
-
 }
+
 var budget = budgetCalculator(10, 3, 2);
 console.log(budget);
 
 
 // Find the longest name amoung the friends
 
- function megaFriend(name){
-  var longestName = name[0];
-  for (var i = 0; i < name.length; i++) {
-      var element = name[i].length;
+function megaFriend(names){
+  var longestName = names[0];
+  for (var i = 0; i < names.length; i++) {
+      var element = names[i].length;
     if (element > longestName.length) {
-      longestName = name[i];
+      longestName = names[i];
     }
-  }
+  } 
   return longestName;
 }
-var arr = ['rana', 'rahamtullah', 'karim', 'akhtaruzzaman', 'shahidullah','shahidullahKaisar']
-  var result = megaFriend(arr);
-  console.log(result); 
+
   
   
