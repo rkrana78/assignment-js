@@ -32,9 +32,9 @@ console.log(totalDays);
 function kilometerToMeter(kilo){
     var meter = kilo * 1000;
     if ( kilo > 0){
-    return meter;
+      return meter;
     }else {
-        return "distance can not be negetive";
+      return "distance can not be negetive";
     }
 }
 
