@@ -1,5 +1,3 @@
-// https://github.com/rkrana78/assignment-js
-
 
 
 //total cost of hotel
