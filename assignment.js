@@ -1,3 +1,6 @@
+// https://github.com/rkrana78/assignment-js
+
+
 
 //total cost of hotel
 
@@ -57,7 +60,7 @@ var budget = budgetCalculator(10, 3, 2);
 console.log(budget);
 
 
-// Find the longest name amoung the friends
+// Find the longest name among the friends
 
 function megaFriend(names){
   var longestName = names[0];
@@ -69,6 +72,3 @@ function megaFriend(names){
   } 
   return longestName;
 }
-
-  
-  
